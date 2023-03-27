@@ -1,6 +1,9 @@
+import React from 'react';
 import "./App.css";
-import ExpenseItem from "./Component/ExpenseItem";
-function App() {
+import ExpenseItem from "./Component/Expenses/ExpenseItem";
+//import Card from './Component/UI/Card';
+
+const App = () => {
   const expenses = [
     {
       title: "car Insurance",
