@@ -1,6 +1,10 @@
 import "./ExpenseDate.css";
 
-function ExpenseDate(props){
+const ExpenseDate=(props)=>{
+
+  if (!props.date) {
+    return ; // or any other value or component you'd like to render if date is not available
+}
     const month=props.date.toLocaleString('en-US',{month: 'long'});
 const day=props.date.toLocaleString('en-US',{day :'2-digit'});
 const year=props.date.getFullYear();
